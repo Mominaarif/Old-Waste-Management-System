@@ -1,0 +1,93 @@
+html, body {
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  font-family: 'Arial', sans-serif; /* Optional: Global font */
+}
+
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  background-color: #02080f;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box; /* Include padding and border in width */
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+  position: fixed; /* Sidebar stays fixed as you scroll */
+  transition: width 0.3s; /* Smooth transition for expanding or collapsing */
+}
+
+.sidebar:hover {
+  width: 300px; /* Slightly expand sidebar on hover */
+}
+
+.sidebar-header {
+  margin-bottom: 20px; /* Adjust margin if necessary */
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ecf0f1;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spacing between links */
+}
+
+
+
+.sidebar-link a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  display: block; /* Makes entire link clickable */
+  width: 100%; /* Ensures hover effects apply to the whole link area */
+  transition: color 0.3s ease;
+}
+
+.sidebar-link:hover {
+  background-color: #34495e;
+  transform: translateX(5px); /* Slight move effect on hover */
+}
+
+.sidebar-link a:hover {
+  color: #1abc9c;
+}
+
+/* Optional: Add active link styling */
+.sidebar-link-active {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.sidebar-link-active a {
+  color: white;
+}
+
+/* Adding subtle border around the sidebar */
+.sidebar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #1abc9c;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5px 0.5px;
+  border-radius: 4px;
+  transition: background-color 0.7s ease, transform 0.5s ease;
+}
+
+.sidebar-divider {
+  border: 1;
+  height: 1px;
+  background-color: #366798; /* Divider color */
+  margin: 1px 0; /* Space around the divider */
+}

@@ -1,0 +1,70 @@
+Navbar styling .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 24, 0);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    height: 10vh;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 24px;
+}
+
+.navbar-logo,
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-logo,
+p {
+    font-size: 18px;
+}
+
+.navbar-logo,
+img {
+    width: 90px;
+    height: 90px;
+}
+
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 35%;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar-links a:hover {
+    color: #b2dfdb;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-description h1 {
+        font-size: 16px;
+    }
+}

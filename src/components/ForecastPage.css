@@ -1,0 +1,167 @@
+.forecast-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.info h2 {
+  color: #555;
+}
+
+.info span {
+  font-weight: bold;
+  color: #007BFF; /* Highlight color for values */
+}
+
+.forecast-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.forecast-table th,
+.forecast-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.forecast-table th {
+  background-color: #007BFF;
+  color: white;
+}
+
+.forecast-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.forecast-table tr:hover {
+  background-color: #ddd; /* Highlight row on hover */
+}
+
+.no-data {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.forecast-container {
+  margin: 20px auto;
+  max-width: 80%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.info h2 {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.info span {
+  font-weight: bold;
+  color: #111;
+}
+
+.forecast-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.forecast-table th,
+.forecast-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.forecast-table th {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.forecast-table td {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.forecast-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.forecast-table tbody tr:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.no-data {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #777;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .forecast-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .forecast-table th, .forecast-table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .forecast-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .info h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.forecast-container {
+  margin: 20px auto;
+  max-width: 80%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: auto; /* Enable scrolling when content exceeds */
+  max-height: 80vh; /* Optional: Limit container height to viewport, allowing scrolling */
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+

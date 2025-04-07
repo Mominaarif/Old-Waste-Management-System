@@ -1,0 +1,72 @@
+/* Center the container */
+.file-picker-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #f7f7f7; /* Light background for better visibility */
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 8px;
+}
+
+/* Style the file input */
+.file-input {
+  padding: 10px;
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+/* Hover effect on file input */
+.file-input:hover {
+  border-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style the list of files */
+.file-list {
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+/* Style each file item */
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background-color: #fff;
+}
+
+/* Style the remove button */
+.remove-button {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect on remove button */
+.remove-button:hover {
+  background-color: #ff1a1a;
+}
+
+/* h3 header styling */
+h3 {
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 10px;
+}

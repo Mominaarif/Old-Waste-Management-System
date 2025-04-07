@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Web Main Container */
+.Main_Container {
+  height: 100%;
+  width: 120%;
+  display: flex;
+  flex-direction: row;
+
+}
+
+/* ain Container */
+.App {
+  background-color: #033a15e3;
+  height: 10%;
+  width: 74%;
+  position: fixed;
+  left: 26%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.App h1 {
+  text-transform: capitalize;
+  text-align: center;
+
+  font-size: 30px;
+  padding: 10px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: 100%;
+  display: inline-block;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+    /* Start at the original position */
+  }
+
+  to {
+    transform: translateX(-100%);
+    /* Move the text off-screen to the left */
+  }
+}
+
+.left-Conitainer {
+  position: fixed;
+  left: 26%;
+  width: 74%;
+  height: 100%;
+}
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.chat-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.chatbot {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 350px;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  pointer-events: auto !important;
+  display: block !important;
+  background-color: white !important;
+  color: black !important;
+}
